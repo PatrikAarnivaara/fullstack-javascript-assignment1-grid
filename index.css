@@ -36,31 +36,44 @@ body {
     grid-row: 6/11;
 }
 
-.image {
+.image-wrapper {
     display: grid;
     grid-column: 1/11;
     grid-row: 1/11;
     align-self: center;
     justify-self: center;
+    padding: 1em;
+}
+
+.image {
     height: auto;
     max-width: 300px;
 }
 
-.text {
+.text-wrapper {
     display: grid;
     grid-column: 1/11;
     grid-row: 1/11;
     align-self: center;
     justify-self: center;
+}
+
+.text {
     color: rosybrown;
 }
 
-.video {
+.video-wrapper {
     display: grid;
     grid-column: 1/11;
     grid-row: 1/11;
     align-self: center;
     justify-self: center;
+    padding: 1em;
+}
+
+.video {
+    /* height: auto;
+    max-width: 300px; */
 }
 
 @media only screen and (max-width: 1250px) {
