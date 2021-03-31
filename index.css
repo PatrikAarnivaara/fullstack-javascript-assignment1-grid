@@ -8,17 +8,17 @@ body {
     padding: 0;
 }
 
-.one {
+.top {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     background-color: yellow;
-    grid-column: 1/6;
+    grid-column: 1/11;
     grid-row: 1/6;
     animation: changeBackground 7s infinite ease-in-out;
 }
 
-.two {
+.middle {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -27,7 +27,7 @@ body {
     grid-row: 6/11;
 }
 
-.three {
+.bottom {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -36,13 +36,9 @@ body {
     grid-row: 6/11;
 }
 
-.four {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    background-color: brown;
-    grid-column: 6/11;
-    grid-row: 1/6;
+.image {
+    height: auto;
+    width: 300px;
 }
 
 .text {
