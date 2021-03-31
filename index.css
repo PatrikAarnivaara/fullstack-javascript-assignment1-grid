@@ -37,16 +37,22 @@ body {
 }
 
 .image {
+    display: grid;
+    grid-column: 1/11;
+    grid-row: 1/11;
+    align-self: center;
+    justify-self: center;
     height: auto;
-    width: 300px;
+    max-width: 300px;
 }
 
 .text {
     display: grid;
     grid-column: 1/11;
-    grid-row: 1/1;
+    grid-row: 1/11;
     align-self: center;
     justify-self: center;
+    color: rosybrown;
 }
 
 .video {
@@ -58,21 +64,17 @@ body {
 }
 
 @media only screen and (max-width: 1250px) {
-    .one {
+    .top {
         grid-column: 1/11;
         grid-row: 1/1;
     }
-    .two {
+    .middle {
         grid-column: 1/11;
         grid-row: 2/2;
     }
-    .three {
+    .bottom {
         grid-column: 1/11;
         grid-row: 3/3;
-    }
-    .four {
-        grid-column: 1/11;
-        grid-row: 4/4;
     }
 }
 
