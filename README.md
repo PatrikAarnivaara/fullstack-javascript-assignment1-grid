@@ -1,1 +1,1 @@
-# Grid - assignment 1
+# Fullstack Javascript - assignment 1 - Grid
