@@ -7,36 +7,45 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #2196F3;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    background-color: yellow;
     grid-column: 1/11;
     grid-row: 1/6;
     padding: 2em;
-    /* animation: changeBackground 7s infinite ease-in-out; */
+    border: 2px solid rgba(204, 204, 204, 0.5);
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
 }
 
 .middle {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    background-color: aqua;
     grid-column: 1/6;
     grid-row: 6/11;
+    border: 2px solid rgba(204, 204, 204, 0.5);
+    border-left-width: 0;
+    border-bottom-width: 0;
 }
 
 .bottom {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    background-color: blueviolet;
     grid-column: 6/11;
     grid-row: 6/11;
+    border: 2px solid rgba(204, 204, 204, 0.5);
+    border-bottom-width: 0;
+    border-right-width: 0;
 }
 
 .image-wrapper {
@@ -49,7 +58,7 @@ body {
 
 .image {
     height: auto;
-    max-width: 200px;
+    max-width: 30vh;
 }
 
 .title-wrapper {
@@ -61,7 +70,7 @@ body {
 }
 
 .title {
-    color: black;
+    color: #fafafa;
 }
 
 .description-wrapper {
@@ -86,18 +95,29 @@ body {
     .middle {
         grid-column: 1/11;
         grid-row: 2/2;
+        border-left-width: 0;
+        border-bottom-width: 2px;
+        border-right-width: 0;
     }
     .bottom {
         grid-column: 1/11;
         grid-row: 3/3;
+        border-left-width: 0;
+        border-bottom-width: 2px;
+    }
+    .image {
+        width: 300px;
     }
 }
 
-@keyframes changeBackground {
+@keyframes gradient {
     0% {
-        background-color: grey;
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
     }
     100% {
-        background-color: beige;
+        background-position: 0% 50%;
     }
 }
