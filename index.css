@@ -89,7 +89,7 @@ body {
     padding: 2em;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 600px) {
     .top {
         grid-column: 1/11;
         grid-row: 1/1;
@@ -108,7 +108,8 @@ body {
         border-bottom-width: 2px;
     }
     .image {
-        width: 300px;
+        padding: 0;
+        max-width: 100%;
     }
     .description {
         padding: 1em
