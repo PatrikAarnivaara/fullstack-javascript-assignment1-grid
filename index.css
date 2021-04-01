@@ -71,6 +71,7 @@ body {
 
 .title {
     color: #fafafa;
+    max-width: 100%;
 }
 
 .description-wrapper {
@@ -80,11 +81,12 @@ body {
     align-self: center;
     justify-self: center;
     text-align: justify;
-    width: 80%;
+    max-width: 100%;
 }
 
 .description {
     color: #fafafa;
+    padding: 2em;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -107,6 +109,9 @@ body {
     }
     .image {
         width: 300px;
+    }
+    .description {
+        padding: 1em
     }
 }
 
